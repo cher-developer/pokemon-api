@@ -15,6 +15,9 @@ Find List location_area_encounters from Pokemon by Name
 http://localhost:8080/pokemons/held_item/{pokemonName}
 
 
+Ruta para ver la documentacion de swagger
+http://localhost:8080/doc/swagger-ui/index.html
+
 #Comandos para generar la imagen y crear el contenedor
 crear la imagen para la api
 docker build .
