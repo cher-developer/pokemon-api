@@ -14,3 +14,12 @@ http://localhost:8080/pokemons/location_area_encounters/{pokemonName}
 Find List location_area_encounters from Pokemon by Name
 http://localhost:8080/pokemons/held_item/{pokemonName}
 
+
+#Comandos para generar la imagen y crear el contenedor
+crear la imagen para la api
+docker build .
+
+para correr el contener es con
+
+docker run -p 8080:8080 id_contenedor
+
