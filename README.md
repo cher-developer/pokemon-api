@@ -19,9 +19,24 @@ http://localhost:8080/pokemons/held_item/{pokemonName}
 crear la imagen para la api
 docker build .
 
+mostrar imagenes
+docker images
+
 para correr el contener es con
+docker run -d --name pokemon-api -p 8080:8080  id-imagen
 
-docker run -p 8080:8080 id_contenedor
+1.- descarga la imagen de sonaquebe
+docker pull sonarqube
 
-run to sonarqube
+
+
+2. run to sonarqube  image
 docker run -d --name sonarqube -e SONAR_ES_BOOSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
+
+3. entrar con a la aplicacion localhost:9000
+  3.1 user admin
+  3.2 password amin
+  3.3 Cambiar el password por el desesado
+  3.4 en la siguiente linea agregar el usuario y el password
+4. comando para ejecutar sonar quebe
+mvn  clean verify sonar:sonar -D sonar.toke=ley sonar -D sonar.login=user -D sonar.password=password
