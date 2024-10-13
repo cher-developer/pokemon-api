@@ -8,7 +8,6 @@ import com.bankaya.pokemon.api.model.entity.MessageEntity;
 import com.bankaya.pokemon.api.service.MessageService;
 import com.bankaya.pokemon.api.service.PokemonService;
 import lombok.extern.slf4j.Slf4j;
-import org.hibernate.engine.spi.ManagedEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.http.ResponseEntity;
@@ -16,13 +15,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.sql.Timestamp;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.bankaya.pokemon.api.utils.HttpReqRespUtil.getClientIpAddressIfServletRequestExist;
+import static com.bankaya.pokemon.api.config.HttpReqResp.getClientIpAddressIfServletRequestExist;
 
 @Slf4j
 @RestController

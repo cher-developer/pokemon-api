@@ -1,10 +1,10 @@
-package com.bankaya.pokemon.api.utils;
+package com.bankaya.pokemon.api.config;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-public class HttpReqRespUtil {
+public class HttpReqResp {
 
 
     private static final String[] IP_HEADER_CANDIDATES = {

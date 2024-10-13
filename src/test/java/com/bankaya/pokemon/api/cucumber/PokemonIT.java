@@ -1,14 +1,19 @@
 package com.bankaya.pokemon.api.cucumber;
 
+
+
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;
 import org.junit.platform.suite.api.SelectClasspathResource;
 import org.junit.platform.suite.api.Suite;
+
+
 import static io.cucumber.junit.platform.engine.Constants.GLUE_PROPERTY_NAME;
+
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectClasspathResource("src/resources/features")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.bankaya.pokemon.api.cucumber")
-public class CucumberTest {
+@SelectClasspathResource("com/bankaya/pokemon/api/cucumber/features")
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.bankaya.pokemon.api.cucumber.glue")
+public class PokemonIT {
 }

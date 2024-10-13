@@ -23,3 +23,5 @@ para correr el contener es con
 
 docker run -p 8080:8080 id_contenedor
 
+run to sonarqube
+docker run -d --name sonarqube -e SONAR_ES_BOOSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
