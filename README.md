@@ -1,4 +1,4 @@
-Api for searh pokemons 
+Api for search pokemons 
 
 with diferents endpoint
 Find List Abilities from Pokemon by Name
